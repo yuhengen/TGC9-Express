@@ -1,0 +1,25 @@
+{{#extends "base"}}
+
+{{#block "title"}}
+    <title>All Movies</title>
+{{/block}}
+
+{{#block "content"}}
+<div class="container">
+    <h1>All Movies</h1>
+<table>
+    <tr>
+        <th>Movie Title</th>
+        <th>Plot</th>
+    </tr>
+    {{#each all-movies}}
+    <tr>
+        <td>{{this.title}}</td>
+        <td>{{this.plot}}</td>
+    </tr>
+    {{/each}}
+</table>
+</div>
+{{/block}}
+
+{{/extends}}
