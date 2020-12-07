@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Plank for 1 minute",
+        "count": 5
+    },
+    {
+        "id": 2,
+        "name": "Consume water every 2 hours",
+        "count": 8
+    },
+    {
+        "id": 3,
+        "name": "Search for job at least once a week",
+        "count": 5
+    }
+]

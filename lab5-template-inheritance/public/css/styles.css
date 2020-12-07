@@ -1,0 +1,376 @@
+/* Shared Navbar CSS */
+
+@font-face {
+    font-family: dslayer;
+    src: url("../fonts/bloodcrow.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navilogo {
+    padding-right: 1vw;
+}
+
+.nav-item {
+    font-family: dslayer;
+    font-size: 22px;
+    /* padding-right: 1vw; */
+    padding-left: 1vw;
+}
+
+.navbar {
+    opacity: 0.95;
+    position: fixed;
+    width: 100vw;
+    z-index: 20;
+    margin-top: 0px;
+}
+
+.bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(50%);
+    z-index: -10;
+}
+
+/* End Navbar CSS */
+
+/* Footer CSS*/
+
+.site-footer {
+    background-color: #343a40;
+    padding-bottom: 1%;
+    z-index: 9;
+}
+
+.fa-facebook-square {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-facebook-square:hover {
+    color: red;
+}
+
+.fa-instagram {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-instagram:hover {
+    color: red;
+}
+
+.fa-youtube-play {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-youtube-play:hover {
+    color: red;
+}
+
+.fa-desktop {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-desktop:hover {
+    color: red;
+}
+
+.fa-google {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-google:hover {
+    color: red;
+}
+
+.fa-apple {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-apple:hover {
+    color: red;
+}
+
+.site-footer h2 {
+    font-family: dslayer;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.socials-bar {
+    padding-top: 2%;
+}
+
+.socials-bar a {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+}
+
+.footer-adjustment {
+    flex-wrap: nowrap;
+}
+
+.footer-text {
+    color: white;
+    font-size: 1em;
+}
+
+.footer-logo {
+    width: 8vw;
+}
+
+.footer-logo2 {
+    width: 15vw;
+}
+
+@media only screen and (max-width: 720px) {
+    .footer-adjustment {
+        flex-wrap: wrap;
+    }
+    .footer-text {
+        color: white;
+        font-size: 0.7rem;
+        margin-top: 15px;
+    }
+    .footer-logo {
+        width: 20vw;
+    }
+    .footer-logo2 {
+        width: 35vw;
+    }
+}
+
+.footer-margin {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a.footer-text:hover {
+    color: red;
+}
+
+/* End Footer CSS */
+
+/* Shared scrollbar design */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* End Scrollbar CSS */
+
+/* Return to Top button */
+
+.toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 10vh;
+    right: 2vw;
+    z-index: 99;
+    font-size: 3vw;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+/* End return to top button */
+
+/* Loading Overlay CSS */
+
+.pre-loader {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid red;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+    transition: opacity 1s;
+}
+
+.loader-text {
+    font-family: dslayer;
+    color: white;
+    font-size: 6vw;
+    padding-top: 25vh;
+}
+
+/* End Loading Overlay CSS */
+
+/* Index Page CSS */
+
+.home-image {
+    position: relative;
+}
+
+.ds-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.download-game {
+    position: absolute;
+    bottom: 16%;
+    font-family: dslayer;
+    font-size: 8vw;
+    color: white;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkred, 0 0 40px darkred, 0 0 50px darkred, 0 0 60px darkred, 0 0 70px darkred;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+}
+
+.download-btns {
+    position: absolute !important;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    bottom: 3%;
+}
+
+.download-btn {
+    width: 20vw;
+}
+
+.banner-logo {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    width: 18vw;
+}
+
+.news-title {
+    font-family: dslayer;
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    margin-top: 7vh;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+.carousel-bgcolor {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0 !important;
+    width: 100%;
+}
+
+.carousel-bgcolor p {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.carousel-indicators {
+    bottom: 0vh !important;
+}
+
+@media only screen and (max-width: 1023px) {
+    .download-game {
+        bottom: 70vh;
+        font-size: 12vw;
+    }
+    .download-btns {
+        position: absolute !important;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .download-btn {
+        width: 50vw;
+        margin-top: 2vh;
+    }
+    .banner-logo {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 22vw;
+    }
+    .news-title {
+        font-size: 9vw;
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .download-game {
+        bottom: 35vh;
+        font-size: 12vw;
+    }
+}
